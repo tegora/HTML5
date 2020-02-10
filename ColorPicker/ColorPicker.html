@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Picker</title>
+    <style>
+        p {
+            font-size: 25px;
+            width: 500px;
+            text-align: justify;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>$(document).ready(function(){
+ $("#colorpicker").change(function(){
+ $("p").css("color", $("#colorpicker").prop("value"));
+ });
+ });</script>
+</head>
+<body>
+    <label for="colorpicker">Choose Color: </label>
+    <input type="color" id="colorpicker" />
+    <p> Система выбора цвета текста. Для выбора цвета кликните на поле выбора цвета выше. Откроется палитра всех возможных цветов и при смене цвета текст поменяется.</p>
+</body>
+</html>
