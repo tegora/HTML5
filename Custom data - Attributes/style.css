@@ -1,0 +1,22 @@
+﻿#parent{
+    border: 3px solid black;
+    width: 500px;
+    height: 500px;
+    margin: 25px auto; //center
+}
+.box{
+    width: 150px;
+    height: 150px;
+}
+#box1{
+    background: cyan;
+}
+#box2 {
+    background: pink;
+}
+#box3 {
+    background: gray;
+}
+#box4 {
+    background: orange;
+}
