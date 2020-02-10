@@ -2,21 +2,34 @@
     border: 3px solid black;
     width: 500px;
     height: 500px;
-    margin: 25px auto; //center
+    margin: 25px auto;
+    position: relative;
 }
 .box{
     width: 150px;
     height: 150px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 150px;
+    position: absolute;
 }
 #box1{
     background: cyan;
+    top: 100px;
+    left: 100px;
 }
 #box2 {
     background: pink;
+    top: 100px;
+    right: 100px;
 }
 #box3 {
     background: gray;
+    bottom: 100px;
+    left: 100px;
 }
 #box4 {
     background: orange;
+    bottom: 100px;
+    right: 100px;
 }
