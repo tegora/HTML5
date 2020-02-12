@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="style.css" />
         <script>
             $(document).ready(function(){
-                $("#box1").click(function(){
+               /* $("#box1").click(function(){
                     $(this).animate({top:0, left:0
                     });
                 $("#box2").click(function(){
@@ -18,17 +18,21 @@
                     });
                 $("#box4").click(function(){
                     $(this).animate({bottom:0, right:0});
-                    });
+                    });*/
+                $(".box").click(function(){
+                var topBottom = $(this).data("topbottom");
+                var rightLeft = $(this).data("rightleft");
+                $(this).animate({[topBottom]:0, [rightLeft]:0});
                 });
             });
         </script>
     </head>
     <body>
         <div id="parent">
-            <div id="box1" class="box">Click</div>
-            <div id="box2" class="box">Click</div>
-            <div id="box3" class="box">Click</div>
-            <div id="box4" class="box">Click</div>
+            <div id="box1" class="box" data-topbottom="top" data-rightleft="left">Click</div>
+            <div id="box2" class="box" data-topbottom="top" data-rightleft="right">Click</div>
+            <div id="box3" class="box" data-topbottom="bottom" data-rightleft="left">Click</div>
+            <div id="box4" class="box" data-topbottom="bottom" data-rightleft="right">Click</div>
         </div>
 
     </body>
