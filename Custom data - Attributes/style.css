@@ -12,6 +12,7 @@
     text-align: center;
     line-height: 150px;
     position: absolute;
+    cursor: pointer;
 }
 #box1{
     background: cyan;
